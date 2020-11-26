@@ -22,19 +22,19 @@ const BookList = ({book, dispatch}) => {
     return (
         <>
           <li className='list-items' > 
-            <div>
+            <div className='author'  style={{color: isComplete ? 'red' : '#ddd' }} >
                 {author}
             </div>
 
-            <div>
+            <div className='title' style={{color: isComplete ? 'red' : '#ddd' }}  >
                 {title}
             </div>
 
-            <div>
-                {!isComplete ? <CheckBoxOutlineBlankIcon onClick={handleTick}/> :  <CheckBoxOutlinedIcon onClick={handleTick} /> }
+            <div className='status'> 
+                {!isComplete ? <CheckBoxOutlineBlankIcon onClick={handleTick} className='tick' style={{color: isComplete ? 'red' : '#ddd' }}  /> :  <CheckBoxOutlinedIcon onClick={handleTick} className='tick'  style={{color: isComplete ? 'red' : '#ddd' }}  /> }
             </div>
 
-            <div>
+            <div className='delete' >
                 <DeleteOutlineIcon onClick={handleRemove} />
             </div>
           </li>  

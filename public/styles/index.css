@@ -24,7 +24,8 @@ body {
 .container {
     margin: 0;
     padding: 0;
-    background: var(--ui-color);
+    /* background: var(--ui-color); */
+    width: 100%;
     
     padding: 0;
 
@@ -60,18 +61,28 @@ nav span {
 }
 
 .list {
-    max-width: 400px;
+    max-width: 500px;
     width: 100%;
     padding: 0;
+    margin: 0;
 
 }
 
+
+.title {
+    flex-grow: 1;
+}
+
+
+
 .list-items {
+    margin-top: 5px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 10px;
     background: var(--nav-bg);
     border-radius: 5px;
+    color: var(--ui-light);
     /* max-width: 500px; */
     width: 100%;
 
@@ -79,9 +90,27 @@ nav span {
 
 
 
+
+
+.list-items div:nth-child(1) {
+    border-right: solid 1px var(--ui-dark);
+    /* padding-right: 20px; */
+    flex-grow: 0.1;
+}
+
+.title {
+    margin-left: 1rem;
+    justify-content: flex-end;
+}
+
+
+
+
+
+
 .content {
     width: 100%;
-    background: var(--nav-light);
+    /* background: var(--nav-light); */
     margin-top: 0.5rem auto;
     justify-content: center;
     display: flex;
@@ -89,25 +118,43 @@ nav span {
 }
 
 form {
-    max-width: 600px;
+    max-width: 350px;
     display: block;
     margin: 2rem auto;
+    width: 100%;
 }
 
 form h2 {
     font-size: 18px;
     text-align: center;
-    color: var(--ui-color);
+    color: var(--ui-dark);
    
 }
 
 form input{
     display: block;
+    width: 100%;
     padding: 10px;
     border-radius: 3px;
     caret-color: var(--nav-bg);
     background: var(--ui-color-light);
     color: var(--nav-bg);
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+form button {
+    padding: 10px;
+    background:var(--nav-bg);
+    color: var(--ui-light);
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+
+}
+
+.tick {
+    cursor: pointer;
 }
 
 

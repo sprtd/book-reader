@@ -8,12 +8,13 @@ const BookForm = () => {
     const {dispatch} = useContext(BookContext)
     const [inputEntry, setInputEntry] = useState({
         title: '',
-        author: ''
+        author: '',
+    
 
     })
     const {title: titleEntry, author: authorEntry} = inputEntry
 
-    //handleChane
+    //handleChange
     const handleChange = event => {
         const {name, value} = event.target
         setInputEntry({...inputEntry, [name]: value} )
@@ -22,7 +23,7 @@ const BookForm = () => {
     // handleAdd
     const handleSubmit = event => {
         event.preventDefault()
-        dispatch({type: ACTION.ADD_BOOK, payload:{id: uuidv4(), title: titleEntry, author: authorEntry}})
+        dispatch({type: ACTION.ADD_BOOK, payload:{id: uuidv4(), title: titleEntry, author: authorEntry, isComplete: false}})
         setInputEntry({
             title: '',
             author: ''
