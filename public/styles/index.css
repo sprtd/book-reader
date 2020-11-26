@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&family=Open+Sans:wght@300&display=swap');
+
+:root {
+    --nav-bg: #555;
+    --nav-color: #fafafa;
+    --ui-light: #ddd;
+    --ui-dark: #333;
+    --ui-color: #eee;
+    --nav-light: #99a;
+    --ui-color-light: rgb(255, 241, 241);
+    --nav: rgba(158, 154, 155, 0.801);
+
+
+    
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    background: var(--ui-color);
+    
+    padding: 0;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: var(--nav);
+    color: var(--ui-color)
+}
+
+nav h2 {
+    font-weight: 200;
+    color: var(--nav-color);
+    letter-spacing: -1px;
+    flex-grow: 2;
+}
+
+nav span {
+    margin-left: 10px;
+    color: var(--ui-light);
+
+}
+
+.warning {
+    font-size: 14px;
+    color: var(--ui-dark);
+    text-align: center;
+    padding: 0;
+}
+
+.list {
+    max-width: 400px;
+    width: 100%;
+    padding: 0;
+
+}
+
+.list-items {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: var(--nav-bg);
+    border-radius: 5px;
+    /* max-width: 500px; */
+    width: 100%;
+
+}
+
+
+
+.content {
+    width: 100%;
+    background: var(--nav-light);
+    margin-top: 0.5rem auto;
+    justify-content: center;
+    display: flex;
+
+}
+
+form {
+    max-width: 600px;
+    display: block;
+    margin: 2rem auto;
+}
+
+form h2 {
+    font-size: 18px;
+    text-align: center;
+    color: var(--ui-color);
+   
+}
+
+form input{
+    display: block;
+    padding: 10px;
+    border-radius: 3px;
+    caret-color: var(--nav-bg);
+    background: var(--ui-color-light);
+    color: var(--nav-bg);
+}
+
+
+
