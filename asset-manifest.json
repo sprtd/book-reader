@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/book-reader/static/js/main.f95aa356.chunk.js",
+    "main.js.map": "/book-reader/static/js/main.f95aa356.chunk.js.map",
+    "runtime-main.js": "/book-reader/static/js/runtime-main.d25a2ec5.js",
+    "runtime-main.js.map": "/book-reader/static/js/runtime-main.d25a2ec5.js.map",
+    "static/js/2.0481f628.chunk.js": "/book-reader/static/js/2.0481f628.chunk.js",
+    "static/js/2.0481f628.chunk.js.map": "/book-reader/static/js/2.0481f628.chunk.js.map",
+    "index.html": "/book-reader/index.html",
+    "static/js/2.0481f628.chunk.js.LICENSE.txt": "/book-reader/static/js/2.0481f628.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d25a2ec5.js",
+    "static/js/2.0481f628.chunk.js",
+    "static/js/main.f95aa356.chunk.js"
+  ]
+}
