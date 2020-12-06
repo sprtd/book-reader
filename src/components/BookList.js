@@ -35,7 +35,7 @@ const BookList = ({book, dispatch}) => {
             </div>
 
             <div className='delete' >
-                <DeleteOutlineIcon onClick={handleRemove} style={{color: isComplete ? 'red' : '#ddd' }} />
+                <DeleteOutlineIcon onClick={handleRemove} style={{color: isComplete ? 'red' : '#ddd', opacity: 0.5 }} />
             </div>
           </li>  
         </>
