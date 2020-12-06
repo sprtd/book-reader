@@ -88,6 +88,15 @@ nav span {
 
 }
 
+.delete {
+    cursor: pointer;
+    transition: 0.5s;
+}
+.delete:hover {
+    opacity: 0.8;
+    transition-timing-function: ease-in-out;
+
+}
 
 
 
